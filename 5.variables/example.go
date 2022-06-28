@@ -23,5 +23,6 @@ func main(){
 	// The lvalues and the rvalues in Go
 	/*
 		Variable = value
+		lValues = Rvalues
 	*/
 }
