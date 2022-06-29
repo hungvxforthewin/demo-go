@@ -15,6 +15,7 @@ func main() {
 	const a3 float64 = 3.14159
 	/*
 		Escape Sequence
+		different %d, %s
 	*/
 	fmt.Println("Hello\\World!")
 	fmt.Println("Hello\"World!")
