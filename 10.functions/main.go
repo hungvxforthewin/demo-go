@@ -12,6 +12,10 @@ func main()  {
 	ret = max(a, b)
 
 	fmt.Printf( "Max value is : %d\n", ret )
+
+	/* calling func return multi values */
+	x, y := swap("A", "B")
+	fmt.Println(x, y)
 }
 
 // Declare function
@@ -23,4 +27,9 @@ func max(num1 int, num2 int)  int{
 		result = num2
 	}
 	return result
+}
+
+// Func return multi values
+func swap(x, y string) (string, string){
+	return y, x
 }
