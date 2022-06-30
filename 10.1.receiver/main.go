@@ -36,7 +36,37 @@ func main() {
 	ptr = &Person{Name: "human", Age: 18}
 	fmt.Println(ptr.Name, ptr.Age)
 	ptr.IncreaseAge()
-	ptr.NotReallyIncreaseAge() //Value receiver chấp nhận cả pointer
-	fmt.Println(ptr.Name, ptr.Age)
+	ptr.NotReallyIncreaseAge()     //Value receiver chấp nhận cả pointer
+	fmt.Println(ptr.Name, ptr.Age) // not *ptr.Name
+	// receiver of type basic
+	var abc MyInt
+	var pptr *MyInt
+	abc = 43
+	pptr = &abc
+	pptr.Double()
+	fmt.Println(abc)
+	fmt.Println(*pptr)
+	fmt.Println(pptr) // address of variable
 
+	// receiver for slice
+	var sliceInt SliceInt = []int{1, 2, 3, 4} //khai báo biến cũng phải đúng kiểu sliceInt
+	//sliceInt := []int{1, 2, 3, 4} //cách này không biên dịch được
+	sliceInt.DoubleIt()
+	fmt.Println(sliceInt) //[2 4 6 8]
+}
+
+// Receiver cho type basic
+type MyInt int
+
+func (pi *MyInt) Double() {
+	*pi = *pi * 2
+}
+
+// receiver for slice
+type SliceInt []int
+
+func (p SliceInt) DoubleIt() {
+	for i, v := range p {
+		p[i] = v * 2
+	}
 }
