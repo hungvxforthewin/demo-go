@@ -23,3 +23,6 @@ func main(){
 	var salary int = arr[4]
 	fmt.Println(salary)
 }
+
+// 	 Không giống đa số các ngôn ngữ khác, Array trong Go không phải là dạng tham chiếu (reference types) mà là dạng tham trị (value types). 
+//   Khi gán giá trị nó cho một biến mới thì nó sẽ tạo ra một bản copy của Array cũ, và mọi thay đổi ở Array mới không ảnh hưởng gì đến Array cũ:
