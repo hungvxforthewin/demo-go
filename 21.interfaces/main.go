@@ -30,6 +30,7 @@ func (rect Rectangle) area() float64 {
 	return rect.width * rect.height
 }
 
+/*new*/
 /* define a method for shape */
 func getArea(shape Shape) float64 {
 	return shape.area()
