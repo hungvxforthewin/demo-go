@@ -1,0 +1,1 @@
+setup environment go, tool IDE for windows
