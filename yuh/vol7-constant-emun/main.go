@@ -46,7 +46,7 @@ func main() {
 		phỉa có value (cần phải tính toán trong lúc biên dịch)
 		ko assign lại data
 		assign data --> type
-		shadow
+		shadow (đổ bóng)
 4. Kiểu dữ liệu Enum
 5. khởi tạo value enum  = iota
 	iota phụ thuộc vào scope ()

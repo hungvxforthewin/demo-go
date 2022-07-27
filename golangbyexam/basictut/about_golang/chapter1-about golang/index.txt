@@ -1,0 +1,7 @@
+-   Go is a statically typed, compiled programming language (not Interpreted)
+-   GO had its first stable release in 2011
+-   What makes GO different
+        + Simple to Use Syntax (25 keywords)
+        + Compiled Language with fast Compilation
+        + Static Type Language
+        + Garbage Collected
