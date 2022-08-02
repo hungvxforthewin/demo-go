@@ -20,6 +20,7 @@ func main() {
 				fmt.Println("correct number")
 				fmt.Println("correct number")
 				fmt.Println("correct number")
+
 			default:
 				fmt.Println("incorrect number")
 	}
